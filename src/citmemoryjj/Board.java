@@ -1,13 +1,14 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package citmemoryjj;
 
-/**
- *
- * @author Family
- */
 public class Board {
     
+    int numRows = 4;
+    int numColumns = 4;
+
+    public void displayBoard() {
+
+        System.out.println("The board has " + numRows + " rows and " 
+        + numColumns + " columns.");
+    }
 }
