@@ -4,6 +4,7 @@
  */
 package citmemoryjj;
 
+import java.util.Scanner;
 /**
  *
  * @author Family

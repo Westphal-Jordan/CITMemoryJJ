@@ -3,7 +3,7 @@ package citmemoryjj;
 
 public class Menu {
     
-    String options = "MAIN MENU\n"
+    String options = "\tMAIN MENU\n"
             + "- Begin Game         (press b)\n"
             + "- See Rules          (press r)\n"
             + "- Change Preferences (press p)\n"

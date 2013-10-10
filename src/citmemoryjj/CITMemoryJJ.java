@@ -16,7 +16,7 @@ public class CITMemoryJJ {
     public static void main(String[] args) {
         CITMemoryJJ myGame = new CITMemoryJJ();
         myGame.getName();
-        myGame.displayHelp();
+        myGame.displayName();
         
         Menu myMenu = new Menu();
         myMenu.displayMenu();
@@ -27,6 +27,9 @@ public class CITMemoryJJ {
         Rules myRules = new Rules();
         myRules.displayRules();
         
+        Timer myTimer = new Timer();
+        myTimer.displayEquation();
+        
     }
     
     public void getName() {
@@ -35,7 +38,7 @@ public class CITMemoryJJ {
         this.name = input.next();
     }
     
-    public void displayHelp() {
+    public void displayName() {
         System.out.println("\n" + this.asterisks);
         System.out.println("Hello " + this.name + ", " + this.instructions);
         System.out.println(this.asterisks + "\n");

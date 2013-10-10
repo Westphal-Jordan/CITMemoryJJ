@@ -3,12 +3,14 @@ package citmemoryjj;
 
 public class Board {
     
-    int numRows = 4;
-    int numColumns = 4;
-
     public void displayBoard() {
 
-        System.out.println("The board has " + numRows + " rows and " 
-        + numColumns + " columns.");
+        System.out.println(
+                "\tx | x | x | x\n"
+              + "\tx | x | x | x\n"
+              + "\tx | x | x | x\n"
+              + "\tx | x | x | x\n"
+              + "\tx | x | x | x\n"
+                );
     }
 }
