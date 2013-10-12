@@ -12,6 +12,7 @@ public class CITMemoryJJ {
             + "Good luck!";
     String asterisks = "***************";
            
+    // testing github uploading procedure
    
     public static void main(String[] args) {
         CITMemoryJJ myGame = new CITMemoryJJ();
