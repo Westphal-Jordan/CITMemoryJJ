@@ -27,6 +27,7 @@ public class CITMemoryJJ {
         
         Rules myRules = new Rules();
         myRules.displayRules();
+        myRules.individualAssignment3();
         
         Timer myTimer = new Timer();
         myTimer.displayEquation();
