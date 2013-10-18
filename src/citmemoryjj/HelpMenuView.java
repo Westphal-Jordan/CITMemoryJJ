@@ -48,6 +48,9 @@ public class HelpMenuView {
             if(command == r){
                 System.out.println("You've chosen the rules option.");
             }
+            else if (command == q){
+                System.out.println("You are going to exit this menu.");
+            }
             else
                 System.out.println("You've entered an invalid letter. Try again.");
          }while(command != r || command != q);
