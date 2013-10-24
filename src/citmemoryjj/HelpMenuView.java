@@ -37,13 +37,13 @@ public class HelpMenuView {
      public void validateInput()
      throws java.io.IOException {
          
-         char command = getInput();
+         char command;
          char r = 'r';
          char q = 'q';
          
          do {
             displayHelpMenu();
-            getInput();
+            command = getInput();
             
             if(command == r){
                 System.out.println("You've chosen the rules option.");
