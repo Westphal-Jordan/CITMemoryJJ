@@ -7,8 +7,7 @@ public class CITMemoryJJ {
    
     String name;
     
-    public static void main(String[] args)
-    throws java.io.IOException{
+    public static void main(String[] args){
         CITMemoryJJ myGame = new CITMemoryJJ();
         myGame.getName();
         myGame.displayName();
@@ -25,8 +24,11 @@ public class CITMemoryJJ {
         Timer myTimer = new Timer();
         
         HelpMenuView helpMenu = new HelpMenuView();
-        helpMenu.displayHelpMenu();
-        helpMenu.validateInput();
+        // helpMenu.
+        
+                
+        GetInput getinput = new GetInput();
+        getinput.getPosition();
     }
     
     public void getName() {
