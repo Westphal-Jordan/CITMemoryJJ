@@ -20,12 +20,11 @@ public class CITMemoryJJ {
         Board myBoard = new Board();
         
         Rules myRules = new Rules();
+        myRules.jordanWestphalIndivAssign5();
         
         Timer myTimer = new Timer();
         
         HelpMenuView helpMenu = new HelpMenuView();
-        // helpMenu.
-        
                 
         GetInput getinput = new GetInput();
         getinput.getPosition();

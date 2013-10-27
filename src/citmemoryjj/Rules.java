@@ -56,5 +56,14 @@ public class Rules {
                 + "you know that by now, right? \n "
                 + "I don't want to be a \"pest\".");
     }
+   
+    public void jordanWestphalIndivAssign5() {
     
+     String process[] = {"This ", "should ", "show ", "how", "an ", "array ",  
+        "works ", "with ", "a ", "for ", "loop."}; // a for loop that iterates through a list
+   
+        for (int counter = 0; counter < process.length; counter++){
+            System.out.println(process[counter]);
+        }
+    }
 }
