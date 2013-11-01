@@ -20,14 +20,15 @@ public class CITMemoryJJ {
         Board myBoard = new Board();
         
         Rules myRules = new Rules();
-        myRules.jordanWestphalIndivAssign5();
         
         Timer myTimer = new Timer();
         
         HelpMenuView helpMenu = new HelpMenuView();
                 
         GetInput getinput = new GetInput();
-        getinput.getPosition();
+        
+        PairedProgramming paired = new PairedProgramming();
+        paired.sortAndDisplay();
     }
     
     public void getName() {
