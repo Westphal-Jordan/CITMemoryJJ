@@ -29,6 +29,9 @@ public class CITMemoryJJ {
         
         PairedProgramming paired = new PairedProgramming();
         paired.sortAndDisplay();
+        
+        IndividualProgramming indiv = new IndividualProgramming();
+        indiv.computeSum();
     }
     
     public void getName() {
