@@ -4,26 +4,29 @@ import java.util.Scanner;
 
 public class HelpMenuView {
     
-    public void displayHelpMenu() {
-        String menuItems = "\n==================================================\n"
-                + "\tHELP MENU\n" 
-                + "Enter a letter associated with one of the following "
-                + "commands and press enter:\n"
-                + "R -- Rules\n"
-                + "Q -- Quit Help\n"
-                + "====================================================";
-        
-        System.out.println(menuItems);
+   private static final String[][] menuItems = {
+        {"R", "Rules"},
+        {"Q", "Quit Help"}
+    };
+ 
+   HelpMenuControl helpMenuControl = new HelpMenuControl();
+   Rules rules = new Rules();
+   
+   public final void display() {
+        System.out.println("\n\t===============================================================");
+        System.out.println("\tEnter the letter associated with one of the following commands:");
+
+        for (int i = 0; i <HelpMenuView.menuItems.length; i++) {
+            System.out.println("\t   " + menuItems[i][0] + "\t" + menuItems[i][1]);
+        }
+        System.out.println("\t===============================================================\n");
     }
     
-    HelpMenuControl helpMenuControl = new HelpMenuControl();
-    Rules rules = new Rules();
-    
-    private char getInput() {
+    private String getInput() {
         
         Scanner input = new Scanner(System.in);
-        char letter;
-        letter = input.next().charAt(0);
+        String letter;
+        letter = input.nextLine();
         
        /* do {
             Scanner ignore = new Scanner(System.in);
@@ -34,23 +37,24 @@ public class HelpMenuView {
     
      public void validateInput(){
          
-         char command;
-         
+         String command;
+         boolean valid = false;
          do {
-            this.displayHelpMenu();
+            this.display();
             command = getInput();
+            command = command.trim().toUpperCase();
             
             switch (command) {
-                case 'r':
+                case "R":
                     rules.displayRules();
                     break;
-                case 'q':
+                case "Q":
                     System.out.println("You are going to exit this menu.");
                     break;
                 default:
                     System.out.println("You have entered an invalid letter. Try again.");
             }
             
-         }while(command != 'r' || command != 'q');
+         }while(!"Q".equals(command));
      }
 }

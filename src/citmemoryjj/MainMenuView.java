@@ -13,6 +13,9 @@ public class MainMenuView {
  
     MainMenuControl mainMenuControl = new MainMenuControl();
     
+    public MainMenuView() {   // constructor
+    }
+    
     public final void display() {
         System.out.println("\n\t===============================================================");
         System.out.println("\tEnter the letter associated with one of the following commands:");
@@ -40,23 +43,25 @@ public class MainMenuView {
         
         String command;
         
+        boolean valid = false;
         do {
             this.display();
             command = this.getInput();
+            command = command.trim().toUpperCase();
             switch (command) {
                 case "B":
                     System.out.println("You are going to begin the game.");
                     break;
                 case "H":
                     HelpMenuView helpMenu = new HelpMenuView();
-                    helpMenu.displayHelpMenu();
+                    helpMenu.display();
                     break;
                 case "X":
                     System.out.println("You are trying to exit the game.");
                 default:
                     System.out.println("You have entered an invalid character. Try again.");
             }
-        }while (command != "X" || command != "B");
+        }while (!"X".equals(command));
      }
 }
 

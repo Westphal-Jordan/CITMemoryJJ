@@ -19,26 +19,21 @@ public class CITMemoryJJ {
         HelpMenuView helpMenuView = new HelpMenuView();
         helpMenuView.validateInput();
         
-        Menu myMenu = new Menu();
-        
         Board myBoard = new Board();
         
         Rules myRules = new Rules();
         
         Timer myTimer = new Timer();
         
-        
-        
         GetInput getinput = new GetInput();
         
         PairedProgramming paired = new PairedProgramming();
-        
         
         IndividualProgramming indiv = new IndividualProgramming();
         
     }
     
-    public void getName() {
+    /*public void getName() {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your name: ");
         this.name = input.next();
@@ -46,5 +41,5 @@ public class CITMemoryJJ {
     
     public void displayName() {
         System.out.println("\nHello " +this.name + ", ");
-    }
+    }*/
 }
