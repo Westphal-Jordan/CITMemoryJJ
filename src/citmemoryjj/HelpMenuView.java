@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package citmemoryjj;
 
 import java.util.Scanner;
@@ -20,39 +16,41 @@ public class HelpMenuView {
         System.out.println(menuItems);
     }
     
-    public char getInput() 
-      throws java.io.IOException {
+    HelpMenuControl helpMenuControl = new HelpMenuControl();
+    Rules rules = new Rules();
+    
+    private char getInput() {
         
-        char command, ignore;
-        command = (char) System.in.read();
+        Scanner input = new Scanner(System.in);
+        char letter;
+        letter = input.next().charAt(0);
         
+       /* do {
+            Scanner ignore = new Scanner(System.in);
+        } while(ignore != '\n'); */
         
-        do {
-            ignore = (char) System.in.read();
-        } while(ignore != '\n');
-        
-        return command;
+        return letter;
     }
     
-     public void validateInput()
-     throws java.io.IOException {
+     public void validateInput(){
          
          char command;
-         char r = 'r';
-         char q = 'q';
          
          do {
-            displayHelpMenu();
+            this.displayHelpMenu();
             command = getInput();
             
-            if(command == r){
-                System.out.println("You've chosen the rules option.");
+            switch (command) {
+                case 'r':
+                    rules.displayRules();
+                    break;
+                case 'q':
+                    System.out.println("You are going to exit this menu.");
+                    break;
+                default:
+                    System.out.println("You have entered an invalid letter. Try again.");
             }
-            else if (command == q){
-                System.out.println("You are going to exit this menu.");
-            }
-            else
-                System.out.println("You've entered an invalid letter. Try again.");
-         }while(command != r || command != q);
+            
+         }while(command != 'r' || command != 'q');
      }
 }

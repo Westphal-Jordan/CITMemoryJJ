@@ -9,11 +9,15 @@ public class CITMemoryJJ {
     
     public static void main(String[] args){
         CITMemoryJJ myGame = new CITMemoryJJ();
-        myGame.getName();
-        myGame.displayName();
       
         Instructions myInstructions = new Instructions();
         myInstructions.displayInstructions();
+        
+        MainMenuView mainmenu = new MainMenuView();
+        mainmenu.validateInput();
+                
+        HelpMenuView helpMenuView = new HelpMenuView();
+        helpMenuView.validateInput();
         
         Menu myMenu = new Menu();
         
@@ -23,15 +27,15 @@ public class CITMemoryJJ {
         
         Timer myTimer = new Timer();
         
-        HelpMenuView helpMenu = new HelpMenuView();
-                
+        
+        
         GetInput getinput = new GetInput();
         
         PairedProgramming paired = new PairedProgramming();
-        paired.sortAndDisplay();
+        
         
         IndividualProgramming indiv = new IndividualProgramming();
-        indiv.computeSum();
+        
     }
     
     public void getName() {
