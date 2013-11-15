@@ -32,14 +32,5 @@ public class CITMemoryJJ {
         IndividualProgramming indiv = new IndividualProgramming();
         
     }
-    
-    /*public void getName() {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter your name: ");
-        this.name = input.next();
-    }
-    
-    public void displayName() {
-        System.out.println("\nHello " +this.name + ", ");
-    }*/
+   
 }

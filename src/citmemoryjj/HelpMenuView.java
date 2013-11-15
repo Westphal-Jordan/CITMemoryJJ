@@ -1,8 +1,9 @@
 package citmemoryjj;
 
 import java.util.Scanner;
+import java.io.Serializable;
 
-public class HelpMenuView {
+public class HelpMenuView implements Serializable {
     
    private static final String[][] menuItems = {
         {"R", "Rules"},
@@ -11,6 +12,9 @@ public class HelpMenuView {
  
    HelpMenuControl helpMenuControl = new HelpMenuControl();
    Rules rules = new Rules();
+
+    public HelpMenuView() {
+    }
    
    public final void display() {
         System.out.println("\n\t===============================================================");

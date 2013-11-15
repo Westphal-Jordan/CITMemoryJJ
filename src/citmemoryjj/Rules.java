@@ -1,12 +1,10 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package citmemoryjj;
 
-public class Rules {
+import java.io.Serializable;
 
-    String rules = "\nRULES:\n"
+public class Rules implements Serializable {
+
+    private static String rules = "\nRULES:\n"
             + "\n"
             + "For one player: \n"
             + "1. Choose a card and remember the image. \n"
@@ -28,42 +26,20 @@ public class Rules {
             + "6. The person with the highest number of matches is the winner.";
             
 
+    public Rules() {
+    }
+
+    public String getRules() {
+        return rules;
+    }
+
+    public void setRules(String rules) {
+        this.rules = rules;
+    }
+    
     public void displayRules() {
 
         System.out.println(rules);
     }
     
-    public void individualAssignment3() {
-        
-        // This function is for the individual programming assignment for week 3. 
-        
-        int radius = 3;
-        double pi = 3.14;
-        double area;
-        byte i = 0;
-        
-        area = pi * radius * radius;
-        area = (int) area;
-        
-        for (; i < 5; i++) {
-            
-            System.out.println("The area of a circle, rounded to the nearest "
-                    + "whole number, with a radius of 3 inches is " 
-                    + area + " inches squared.");
-        }
-
-        System.out.println("...but I guess after telling you that five times, "
-                + "you know that by now, right? \n "
-                + "I don't want to be a \"pest\".");
-    }
-   
-    public void jordanWestphalIndivAssign5() {
-    
-     String process[] = {"This ", "should ", "show ", "how", "an ", "array ",  
-        "works ", "with ", "a ", "for ", "loop."}; // a for loop that iterates through a list
-   
-        for (int counter = 0; counter < process.length; counter++){
-            System.out.println(process[counter]);
-        }
-    }
 }
