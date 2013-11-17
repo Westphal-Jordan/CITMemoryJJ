@@ -1,15 +1,10 @@
-
 package citmemoryjj;
-
-import java.util.Scanner;
 
 public class CITMemoryJJ {
    
-    String name;
     
     public static void main(String[] args){
-        CITMemoryJJ myGame = new CITMemoryJJ();
-      
+   
         Instructions myInstructions = new Instructions();
         myInstructions.displayInstructions();
         

@@ -1,9 +1,9 @@
-
 package citmemoryjj;
 
 import java.util.Scanner;
+import java.io.Serializable;
 
-public class MainMenuView {
+public class MainMenuView implements Serializable {
     
     private static final String[][] menuItems = {
         {"B", "Begin Game"},
@@ -12,8 +12,20 @@ public class MainMenuView {
     };
  
     MainMenuControl mainMenuControl = new MainMenuControl();
-    
-    public MainMenuView() {   // constructor
+
+    public MainMenuView() {
+    }
+
+    public static String[][] getMenuItems() {
+        return menuItems;
+    }
+
+    public MainMenuControl getMainMenuControl() {
+        return mainMenuControl;
+    }
+
+    public void setMainMenuControl(MainMenuControl mainMenuControl) {
+        this.mainMenuControl = mainMenuControl;
     }
     
     public final void display() {
@@ -46,7 +58,7 @@ public class MainMenuView {
         boolean valid = false;
         do {
             this.display();
-            command = this.getInput();
+            command = MainMenuView.getInput();
             command = command.trim().toUpperCase();
             switch (command) {
                 case "B":

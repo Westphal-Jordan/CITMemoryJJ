@@ -26,7 +26,7 @@ public class HelpMenuView implements Serializable {
         System.out.println("\t===============================================================\n");
     }
     
-    private String getInput() {
+    private static String getInput() {
         
         Scanner input = new Scanner(System.in);
         String letter;

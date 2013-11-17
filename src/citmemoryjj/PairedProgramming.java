@@ -1,10 +1,9 @@
-
 package citmemoryjj;
 
 public class PairedProgramming {
     
-    int somenum[] = {9,7,6,10,8,3,1,4,5,2};
-    int a,b,t;
+    private int somenum[] = {9,7,6,10,8,3,1,4,5,2};
+    private int a,b,t;
    
      public void sortAndDisplay(){
          for(a = 1; a < somenum.length; a++)
