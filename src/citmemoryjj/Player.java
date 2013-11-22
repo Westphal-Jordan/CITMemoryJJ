@@ -9,6 +9,10 @@ import java.util.Scanner;
  *
  * @author Family
  */
-public class Player {
-    
+public class Player extends Jordan {
+   
+    @Override
+    public void showClassName() {
+        System.out.println("Shoes.");
+    }
 }

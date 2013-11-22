@@ -7,6 +7,8 @@ public class GameMenuView extends Menu {
     
     @Override
     public void displayClassName() {
-        System.out.println("Class name: GameMenuView");
+        System.out.println("Class name: GameMenuView");    
     }
+    
 }
+    

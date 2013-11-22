@@ -1,7 +1,7 @@
 
 package citmemoryjj;
 
-public class IndividualProgramming {
+public class IndividualProgramming extends Jordan {
     
     public void computeSum() {
         
@@ -46,5 +46,10 @@ public class IndividualProgramming {
         for (int counter = 0; counter < process.length; counter++){
             System.out.println(process[counter]);
         }
+    }
+    
+    @Override
+    public void showClassName() {
+        System.out.println("I");
     }
 }

@@ -80,6 +80,7 @@ public class MainMenuView extends Menu implements Serializable {
     public void displayClassName() {
         System.out.println("Class name: MainMenuView");
     }
+    
 }
 
 

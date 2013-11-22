@@ -7,6 +7,8 @@ public class CITMemoryJJ {
         Instructions myInstructions = new Instructions();
         myInstructions.displayInstructions();
         
+        // Paired Programming week 9
+        
         Menu a = new Menu();
         Menu b = new MainMenuView();
         Menu c = new HelpMenuView();
@@ -16,6 +18,30 @@ public class CITMemoryJJ {
         b.displayClassName();
         c.displayClassName();
         d.displayClassName();
+       
+        // Jordan's Individual Assignment week 9
+        
+        Jordan one = new Jordan();
+        Jordan two = new IndividualProgramming();
+        Jordan three = new Instructions();
+        Jordan four = new Player();
+        
+        two.showClassName();
+        three.showClassName();
+        one.showClassName();
+        four.showClassName();
+        
+        // Jaqueline Individual Assignment week 9
+        
+        Flower yellow = new Flower();
+        Flower red = new GameMenuControl();
+        Flower white = new GetInput();
+        Flower blue = new MainMenuControl();
+        
+        yellow.colorFlower();
+        red.colorFlower();
+        white.colorFlower();
+        blue.colorFlower();
         
         MainMenuView mainMenuView = new MainMenuView();
         mainMenuView.validateInput();

@@ -2,7 +2,7 @@ package citmemoryjj;
 
 import java.util.Scanner;
 
-public class GetInput {
+public class GetInput extends Flower {
     
  public String getPosition(){
    
@@ -33,4 +33,8 @@ public class GetInput {
  
  }
 
+    @Override
+    public void colorFlower() {
+        System.out.println("White and");
+    }
 }

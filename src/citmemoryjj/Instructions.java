@@ -1,6 +1,6 @@
 package citmemoryjj;
 
-public class Instructions {
+public class Instructions extends Jordan {
     
     public void displayInstructions() {
         
@@ -12,5 +12,10 @@ public class Instructions {
        String asterisks = "***************";
        
        System.out.println(instructions);
+    }
+    
+    @Override
+    public void showClassName() {
+        System.out.println("like");
     }
 }

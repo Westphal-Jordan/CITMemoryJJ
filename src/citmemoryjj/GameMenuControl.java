@@ -8,6 +8,10 @@ package citmemoryjj;
  *
  * @author Family
  */
-public class GameMenuControl {
+public class GameMenuControl extends Flower {
     
+    @Override
+    public void colorFlower() {
+        System.out.println("Red,");
+    }
 }
