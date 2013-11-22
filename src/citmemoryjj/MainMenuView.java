@@ -3,7 +3,7 @@ package citmemoryjj;
 import java.util.Scanner;
 import java.io.Serializable;
 
-public class MainMenuView implements Serializable {
+public class MainMenuView extends Menu implements Serializable {
     
     private static final String[][] menuItems = {
         {"B", "Begin Game"},
@@ -75,6 +75,11 @@ public class MainMenuView implements Serializable {
             }
         }while (!"X".equals(command));
      }
+    
+    @Override
+    public void displayClassName() {
+        System.out.println("Class name: MainMenuView");
+    }
 }
 
 

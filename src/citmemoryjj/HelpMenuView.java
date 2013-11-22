@@ -3,7 +3,7 @@ package citmemoryjj;
 import java.util.Scanner;
 import java.io.Serializable;
 
-public class HelpMenuView implements Serializable {
+public class HelpMenuView extends Menu implements Serializable {
     
    private static final String[][] menuItems = {
         {"R", "Rules"},
@@ -16,7 +16,7 @@ public class HelpMenuView implements Serializable {
     public HelpMenuView() {
     }
    
-   public final void display() {
+    public final void display() {
         System.out.println("\n\t===============================================================");
         System.out.println("\tEnter the letter associated with one of the following commands:");
 
@@ -27,7 +27,6 @@ public class HelpMenuView implements Serializable {
     }
     
     private static String getInput() {
-        
         Scanner input = new Scanner(System.in);
         String letter;
         letter = input.nextLine();
@@ -38,8 +37,8 @@ public class HelpMenuView implements Serializable {
         
         return letter;
     }
-    
-     public void validateInput(){
+     
+    public void validateInput(){
          
          String command;
          boolean valid = false;
@@ -60,5 +59,10 @@ public class HelpMenuView implements Serializable {
             }
             
          }while(!"Q".equals(command));
-     }
+    }
+    
+    @Override
+    public void displayClassName() {
+        System.out.println("Class name: HelpMenuView");
+    }
 }
