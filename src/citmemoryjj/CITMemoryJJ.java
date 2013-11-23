@@ -26,10 +26,10 @@ public class CITMemoryJJ {
         Jordan three = new Instructions();
         Jordan four = new Player();
         
-        two.showClassName();
-        three.showClassName();
-        one.showClassName();
-        four.showClassName();
+        two.forJordanClass();
+        three.forJordanClass();
+        one.forJordanClass();
+        four.forJordanClass();
         
         // Jaqueline Individual Assignment week 9
         

@@ -49,7 +49,7 @@ public class IndividualProgramming extends Jordan {
     }
     
     @Override
-    public void showClassName() {
+    public void forJordanClass() {
         System.out.println("I");
     }
 }

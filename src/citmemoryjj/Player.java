@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Player extends Jordan {
    
     @Override
-    public void showClassName() {
+    public void forJordanClass() {
         System.out.println("Shoes.");
     }
 }

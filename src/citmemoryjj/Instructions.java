@@ -15,7 +15,7 @@ public class Instructions extends Jordan {
     }
     
     @Override
-    public void showClassName() {
+    public void forJordanClass() {
         System.out.println("like");
     }
 }
