@@ -1,5 +1,8 @@
-package citmemoryjj;
+package citbyui.cit260.citmemoryjj.menu;
 
+import citbyui.cit260.citmemoryjj.menu.MainMenuControl;
+import citbyui.cit260.citmemoryjj.menu.HelpMenuView;
+import citbyui.cit260.citmemoryjj.menu.Menu;
 import java.util.Scanner;
 import java.io.Serializable;
 

@@ -1,7 +1,10 @@
 
-package citmemoryjj;
+package citbyui.cit260.citmemoryjj.assignments;
 
-public class IndividualProgramming extends Jordan {
+import citmemoryjj.Jordan;
+import citbyui.cit260.citmemoryjj.interfaces.WeekTen;
+
+public class IndividualProgramming extends Jordan implements WeekTen {
     
     public void computeSum() {
         
@@ -51,5 +54,11 @@ public class IndividualProgramming extends Jordan {
     @Override
     public void forJordanClass() {
         System.out.println("I");
+    }
+    
+    @Override
+    public void showName() { // for Jordan's week 10 individual assignment
+        System.out.println("This is an override from the IndividualProgramming class"
+                           + " using the interface class WeekTen.");
     }
 }

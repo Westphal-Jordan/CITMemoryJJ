@@ -1,6 +1,8 @@
-package citmemoryjj;
+package citbyui.cit260.citmemoryjj.assignments;
 
-public class PairedProgramming {
+import citbyui.cit260.citmemoryjj.interfaces.WeekTen;
+
+public class PairedProgramming implements WeekTen {
     
     private int somenum[] = {9,7,6,10,8,3,1,4,5,2};
     private int a,b,t;
@@ -43,11 +45,17 @@ public class PairedProgramming {
         }
     }
      
-        private class weekEight {
+    private class weekEight {
             
             private void weekEightMethod() {
                System.out.println("This is just to show how nested classes work."); 
             }
             
-     }
+    }
+        
+    @Override
+    public void showName() {
+        System.out.println("This is an override from the PairedProgramming class"
+                           + " using the interface class WeekTen.");
+    }
 }

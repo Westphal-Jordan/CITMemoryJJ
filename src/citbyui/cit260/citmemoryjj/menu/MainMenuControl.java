@@ -1,4 +1,6 @@
-package citmemoryjj;
+package citbyui.cit260.citmemoryjj.menu;
+
+import citmemoryjj.Flower;
 
 public class MainMenuControl extends Flower {
     
