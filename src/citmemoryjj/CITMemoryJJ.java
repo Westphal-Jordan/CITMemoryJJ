@@ -8,7 +8,9 @@ import citbyui.cit260.citmemoryjj.menu.HelpMenuView;
 import citbyui.cit260.citmemoryjj.menu.GameMenuView;
 import citbyui.cit260.citmemoryjj.menu.GameMenuControl;
 import citbyui.cit260.citmemoryjj.menu.Menu;
-import citbyui.cit260.citmemoryjj.enums.WeekTenJordan;
+import citbyui.cit260.citmemoryjj.interfaces.DisplayInfo;
+import citbyui.cit260.citmemoryjj.interfaces.EnterInfo;
+import citbyui.cit260.citmemoryjj.interfaces.WeekTen;
 
 public class CITMemoryJJ {
   
@@ -16,6 +18,7 @@ public class CITMemoryJJ {
    
         Instructions myInstructions = new Instructions();
         myInstructions.displayInstructions();
+        
         
         // Paired Programming week 9
         /*
@@ -52,8 +55,20 @@ public class CITMemoryJJ {
         red.colorFlower();
         white.colorFlower();
         blue.colorFlower();
-        */        
+        */
         
+        // Paired Programming Week 10
+        Menu e = new Menu();
+        Menu f = new Menu();
+        
+        e.displayStuff();
+        f.getUserInput();
+        
+        // Paired Programming Week 11
+        PairedProgramming weekEleven = new PairedProgramming();
+        weekEleven.notANumber();
+        
+        /*
         MainMenuView mainMenuView = new MainMenuView();
         mainMenuView.validateInput();
                 
@@ -73,7 +88,7 @@ public class CITMemoryJJ {
         PairedProgramming paired = new PairedProgramming();
         
         IndividualProgramming indiv = new IndividualProgramming();
-        
+        */
     }
    
 }

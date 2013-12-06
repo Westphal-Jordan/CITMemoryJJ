@@ -10,5 +10,5 @@ package citbyui.cit260.citmemoryjj.interfaces;
  */
 public interface WeekTen {
     
-    void showName();
+    void showInfo();
 }

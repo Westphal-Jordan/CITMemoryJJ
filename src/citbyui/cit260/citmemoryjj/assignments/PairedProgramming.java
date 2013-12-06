@@ -1,6 +1,7 @@
 package citbyui.cit260.citmemoryjj.assignments;
 
 import citbyui.cit260.citmemoryjj.interfaces.WeekTen;
+import java.util.Scanner;
 
 public class PairedProgramming implements WeekTen {
     
@@ -54,8 +55,27 @@ public class PairedProgramming implements WeekTen {
     }
         
     @Override
-    public void showName() {
+    public void showInfo() {
         System.out.println("This is an override from the PairedProgramming class"
                            + " using the interface class WeekTen.");
     }
+    
+     public void notANumber() {
+        
+      Scanner input = new Scanner(System.in);
+      int one = 1;
+      
+      do{
+      try {
+        System.out.println("Please enter a number: ");
+        int num = input.nextInt();
+        System.out.println("Thank you.");
+        one = 2;
+      }
+      catch (Exception e) {
+        System.out.println("That is not a number. Please try again.");
+      }
+      }while (one == 1);
+    }
+    
 }

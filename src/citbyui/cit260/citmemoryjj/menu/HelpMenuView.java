@@ -5,6 +5,7 @@ import citbyui.cit260.citmemoryjj.menu.Menu;
 import citmemoryjj.Rules;
 import java.util.Scanner;
 import java.io.Serializable;
+import citbyui.cit260.citmemoryjj.exceptions.MenuException;
 
 public class HelpMenuView extends Menu implements Serializable {
     
@@ -34,10 +35,7 @@ public class HelpMenuView extends Menu implements Serializable {
         String letter;
         letter = input.nextLine();
         
-       /* do {
-            Scanner ignore = new Scanner(System.in);
-        } while(ignore != '\n'); */
-        
+       
         return letter;
     }
      
@@ -59,6 +57,7 @@ public class HelpMenuView extends Menu implements Serializable {
                     break;
                 default:
                     System.out.println("You have entered an invalid letter. Try again.");
+                    //throw new MenuException("You have entered an invalid letter. Try again.");
             }
             
          }while(!"Q".equals(command));

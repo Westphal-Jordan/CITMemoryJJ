@@ -57,7 +57,7 @@ public class IndividualProgramming extends Jordan implements WeekTen {
     }
     
     @Override
-    public void showName() { // for Jordan's week 10 individual assignment
+    public void showInfo() { // for Jordan's week 10 individual assignment
         System.out.println("This is an override from the IndividualProgramming class"
                            + " using the interface class WeekTen.");
     }
