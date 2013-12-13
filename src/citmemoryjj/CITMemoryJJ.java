@@ -11,11 +11,17 @@ import citbyui.cit260.citmemoryjj.menu.Menu;
 import citbyui.cit260.citmemoryjj.interfaces.DisplayInfo;
 import citbyui.cit260.citmemoryjj.interfaces.EnterInfo;
 import citbyui.cit260.citmemoryjj.interfaces.WeekTen;
+import citbyui.cit260.citmemoryjj.frames.MainFrame;
 
 public class CITMemoryJJ {
   
+   // private MainCommands = new MainCommands;
+    
     public static void main(String[] args){
-   
+        
+        MainFrame main = new MainFrame();
+        main.setVisible(true);
+        
         Instructions myInstructions = new Instructions();
         myInstructions.displayInstructions();
         
@@ -57,16 +63,16 @@ public class CITMemoryJJ {
         blue.colorFlower();
         */
         
-        // Paired Programming Week 10
+        /* Paired Programming Week 10
         Menu e = new Menu();
         Menu f = new Menu();
         
         e.displayStuff();
-        f.getUserInput();
+        f.getUserInput(); */
         
-        // Paired Programming Week 11
+        /* Paired Programming Week 11
         PairedProgramming weekEleven = new PairedProgramming();
-        weekEleven.notANumber();
+        weekEleven.notANumber(); */
         
         /*
         MainMenuView mainMenuView = new MainMenuView();
